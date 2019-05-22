@@ -4,17 +4,11 @@
     margin-bottom: 3%;
 }
 </style>
-<template>
-    <v-container fluid>
-        <v-layout row wrap>  
-            <v-flex xs12> 
-                <pre v-html="description"></pre>
-            </v-flex>
-            <v-flex xs12> 
-                <editor v-model="description"></editor>
-            </v-flex>
-        </v-layout>
-    </v-container>
+<template> 
+    <div> 
+        <pre v-html="description"></pre>  
+        <editor v-model="description"></editor>   
+    </div>
 </template>
 <script>
 import Editor from '@tinymce/tinymce-vue';
